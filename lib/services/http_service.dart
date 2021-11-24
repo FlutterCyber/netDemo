@@ -25,7 +25,7 @@ class Network {
     }
     return null;
   }
-  // 2: GET request
+  // 2: POST request
   static Future<String?> POST(String api, Map<String, String> params) async {
     var uri = Uri.https(BASE, api); // http or https
     var response = await post(uri, headers: headers,body: jsonEncode(params));
@@ -34,7 +34,7 @@ class Network {
     }
     return null;
   }
-  // 3: GET request
+  // 3: PUT request
   static Future<String?> PUT(String api, Map<String, String> params) async {
     var uri = Uri.https(BASE, api); // http or https
     var response = await put(uri, headers: headers,body: jsonEncode(params));
@@ -43,7 +43,7 @@ class Network {
     }
     return null;
   }
-  // 4: GET request
+  // 4: DEL request
   static Future<String?> DEL(String api, Map<String, String> params) async {
     var uri = Uri.https(BASE, api, params); // http or https
     var response = await delete(uri, headers: headers);
