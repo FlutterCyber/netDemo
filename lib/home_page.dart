@@ -19,7 +19,7 @@ class _HomePageState extends State<HomePage> {
   }
 
   void _apiCreatePost(Post post) {
-    Network.POST(Network.API_LIST, Network.paramsCreate(post))
+    Network.POST(Network.API_CREATE, Network.paramsCreate(post))
         .then((response) => {
               print(response),
               _showResponse(response!),
