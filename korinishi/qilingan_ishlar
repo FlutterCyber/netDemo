@@ -1,0 +1,11 @@
+qilingan ishlar
+1: android papkadagi android manifestga 1 qator narsa qo'shdim
+<uses-permission android:name="android.permission.INTERNET"/>
+2: ios papkadagi info.plist ga narsa qo'shdim
+<key>NSAppTransportSecurity</key>
+        <dict>
+        	<key>NSAllowsArbitraryLoads</key>
+            <true/>
+        </dict>
+3: pubspec.yamlga http packageni o'rnatib qoyamiz
+4: http_service.dartmi ochamiz
